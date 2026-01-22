@@ -1,0 +1,15 @@
+{
+  "name": "Matrix",
+  "description": "Pure black background with bright green roads - classic terminal/hacker aesthetic",
+  "bg": "#000000",
+  "text": "#00FF00",
+  "gradient_color": "#000000",
+  "water": "#001100",
+  "parks": "#002200",
+  "road_motorway": "#39FF14",
+  "road_primary": "#00FF00",
+  "road_secondary": "#00DD00",
+  "road_tertiary": "#00BB00",
+  "road_residential": "#008800",
+  "road_default": "#00BB00"
+}

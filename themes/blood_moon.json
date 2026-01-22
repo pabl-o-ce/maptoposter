@@ -1,0 +1,15 @@
+{
+  "name": "Blood Moon",
+  "description": "Near-black background with crimson roads - dramatic horror aesthetic",
+  "bg": "#1A0A0A",
+  "text": "#FF4444",
+  "gradient_color": "#1A0A0A",
+  "water": "#0D0505",
+  "parks": "#200808",
+  "road_motorway": "#FF0000",
+  "road_primary": "#FF4444",
+  "road_secondary": "#DC143C",
+  "road_tertiary": "#B22222",
+  "road_residential": "#8B0000",
+  "road_default": "#B22222"
+}

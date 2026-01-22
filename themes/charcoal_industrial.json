@@ -1,0 +1,15 @@
+{
+  "name": "Charcoal Industrial",
+  "description": "Dark gray background with warm orange/rust roads - industrial architectural aesthetic",
+  "bg": "#1C1C1C",
+  "text": "#FF6B35",
+  "gradient_color": "#1C1C1C",
+  "water": "#0F0F0F",
+  "parks": "#252525",
+  "road_motorway": "#FF6B35",
+  "road_primary": "#F77F00",
+  "road_secondary": "#D85A3F",
+  "road_tertiary": "#C44536",
+  "road_residential": "#8B3A2B",
+  "road_default": "#C44536"
+}

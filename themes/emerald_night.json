@@ -1,0 +1,15 @@
+{
+  "name": "Emerald Night",
+  "description": "Dark forest green background with emerald/teal roads - bioluminescent nature aesthetic",
+  "bg": "#0A1F1E",
+  "text": "#2ECC71",
+  "gradient_color": "#0A1F1E",
+  "water": "#051211",
+  "parks": "#0D2818",
+  "road_motorway": "#00FFA3",
+  "road_primary": "#2ECC71",
+  "road_secondary": "#1ABC9C",
+  "road_tertiary": "#16A085",
+  "road_residential": "#0E7C5A",
+  "road_default": "#16A085"
+}

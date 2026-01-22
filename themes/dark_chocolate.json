@@ -1,0 +1,15 @@
+{
+  "name": "Dark Chocolate",
+  "description": "Dark brown background with warm amber roads - vintage leather aesthetic",
+  "bg": "#1A0F0A",
+  "text": "#FFB347",
+  "gradient_color": "#1A0F0A",
+  "water": "#0D0705",
+  "parks": "#251A12",
+  "road_motorway": "#FFD700",
+  "road_primary": "#FFB347",
+  "road_secondary": "#D2691E",
+  "road_tertiary": "#CD853F",
+  "road_residential": "#8B4513",
+  "road_default": "#CD853F"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Slate Storm",
+  "description": "Dark blue-gray background with ice blue roads - cold stormy night aesthetic",
+  "bg": "#1E2A35",
+  "text": "#87CEEB",
+  "gradient_color": "#1E2A35",
+  "water": "#0F1620",
+  "parks": "#263544",
+  "road_motorway": "#E0FFFF",
+  "road_primary": "#87CEEB",
+  "road_secondary": "#6CA6CD",
+  "road_tertiary": "#4682B4",
+  "road_residential": "#36648B",
+  "road_default": "#4682B4"
+}

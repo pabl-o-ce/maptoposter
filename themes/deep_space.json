@@ -1,0 +1,15 @@
+{
+  "name": "Deep Space",
+  "description": "Dark cosmic background with galaxy-inspired roads - NASA starfield aesthetic",
+  "bg": "#050510",
+  "text": "#FFFFFF",
+  "gradient_color": "#050510",
+  "water": "#020208",
+  "parks": "#0B0B1E",
+  "road_motorway": "#FFFFFF",
+  "road_primary": "#9D00FF",
+  "road_secondary": "#7B68EE",
+  "road_tertiary": "#4169E1",
+  "road_residential": "#1E3A8A",
+  "road_default": "#4169E1"
+}

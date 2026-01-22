@@ -1,0 +1,15 @@
+{
+  "name": "Obsidian",
+  "description": "Black volcanic background with lava-orange roads - glowing ember aesthetic",
+  "bg": "#0F0A08",
+  "text": "#FFD700",
+  "gradient_color": "#0F0A08",
+  "water": "#080503",
+  "parks": "#1A1310",
+  "road_motorway": "#FFD700",
+  "road_primary": "#FFA500",
+  "road_secondary": "#FF8C00",
+  "road_tertiary": "#FF4500",
+  "road_residential": "#CC3700",
+  "road_default": "#FF4500"
+}

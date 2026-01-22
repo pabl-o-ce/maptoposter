@@ -1,0 +1,15 @@
+{
+  "name": "Ultraviolet",
+  "description": "Deep purple/violet background with electric magenta roads - cosmic city vibes",
+  "bg": "#1A0B2E",
+  "text": "#E0B0FF",
+  "gradient_color": "#1A0B2E",
+  "water": "#0D0517",
+  "parks": "#2D1B4E",
+  "road_motorway": "#FF00FF",
+  "road_primary": "#E0B0FF",
+  "road_secondary": "#C77DFF",
+  "road_tertiary": "#9D4EDD",
+  "road_residential": "#7B2CBF",
+  "road_default": "#9D4EDD"
+}

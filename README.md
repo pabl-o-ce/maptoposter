@@ -8,17 +8,17 @@ Generate beautiful, minimalist map posters for any city in the world.
 ## Examples
 
 
-| Country      | City           | Theme           | Poster |
-|:------------:|:--------------:|:---------------:|:------:|
-| USA          | San Francisco  | sunset          | <img src="posters/san_francisco_sunset_20260118_144726.png" width="250"> |
-| Spain        | Barcelona      | warm_beige      | <img src="posters/barcelona_warm_beige_20260118_140048.png" width="250"> |
-| Italy        | Venice         | blueprint       | <img src="posters/venice_blueprint_20260118_140505.png" width="250"> |
-| Japan        | Tokyo          | japanese_ink    | <img src="posters/tokyo_japanese_ink_20260118_142446.png" width="250"> |
-| India        | Mumbai         | contrast_zones  | <img src="posters/mumbai_contrast_zones_20260118_145843.png" width="250"> |
-| Morocco      | Marrakech      | terracotta      | <img src="posters/marrakech_terracotta_20260118_143253.png" width="250"> |
-| Singapore    | Singapore      | neon_cyberpunk  | <img src="posters/singapore_neon_cyberpunk_20260118_153328.png" width="250"> |
-| Australia    | Melbourne      | forest          | <img src="posters/melbourne_forest_20260118_153446.png" width="250"> |
-| UAE          | Dubai          | midnight_blue   | <img src="posters/dubai_midnight_blue_20260118_140807.png" width="250"> |
+|  Country  |     City      |     Theme      |                                    Poster                                    |
+| :-------: | :-----------: | :------------: | :--------------------------------------------------------------------------: |
+|    USA    | San Francisco |     sunset     |   <img src="posters/san_francisco_sunset_20260118_144726.png" width="250">   |
+|   Spain   |   Barcelona   |   warm_beige   |   <img src="posters/barcelona_warm_beige_20260118_140048.png" width="250">   |
+|   Italy   |    Venice     |   blueprint    |     <img src="posters/venice_blueprint_20260118_140505.png" width="250">     |
+|   Japan   |     Tokyo     |  japanese_ink  |    <img src="posters/tokyo_japanese_ink_20260118_142446.png" width="250">    |
+|   India   |    Mumbai     | contrast_zones |  <img src="posters/mumbai_contrast_zones_20260118_145843.png" width="250">   |
+|  Morocco  |   Marrakech   |   terracotta   |   <img src="posters/marrakech_terracotta_20260118_143253.png" width="250">   |
+| Singapore |   Singapore   | neon_cyberpunk | <img src="posters/singapore_neon_cyberpunk_20260118_153328.png" width="250"> |
+| Australia |   Melbourne   |     forest     |     <img src="posters/melbourne_forest_20260118_153446.png" width="250">     |
+|    UAE    |     Dubai     | midnight_blue  |   <img src="posters/dubai_midnight_blue_20260118_140807.png" width="250">    |
 
 ## Installation
 
@@ -30,6 +30,7 @@ pip install -r requirements.txt
 
 ```bash
 python create_map_poster.py --city <city> --country <country> [options]
+python create_map_poster.py --latlon <latitude>,<longitude> [options]
 ```
 
 ### Options
@@ -38,30 +39,23 @@ python create_map_poster.py --city <city> --country <country> [options]
 |--------|-------|-------------|---------|
 | `--city` | `-c` | City name | required |
 | `--country` | `-C` | Country name | required |
+| `--latlon` | | Latitude and longitude (e.g., "40.7128,-74.0060") | |
 | **OPTIONAL:** `--name` | | Override display name (city display on poster) | |
 | **OPTIONAL:** `--country-label` | | Override display country (country display on poster) | |
 | **OPTIONAL:** `--theme` | `-t` | Theme name | feature_based |
 | **OPTIONAL:** `--distance` | `-d` | Map radius in meters | 29000 |
 | **OPTIONAL:** `--list-themes` | | List all available themes | |
 | **OPTIONAL:** `--all-themes` | | Generate posters for all available themes | |
-| **OPTIONAL:** `--width` | `-W` | Image width in inches | 12 |
-| **OPTIONAL:** `--height` | `-H` | Image height in inches | 16 |
-
-### Resolution Guide (300 DPI)
-
-Use these values for `-W` and `-H` to target specific resolutions:
-
-| Target | Resolution (px) | Inches (-W / -H) |
-|--------|-----------------|------------------|
-| **Instagram Post** | 1080 x 1080 | 3.6 x 3.6 |
-| **Mobile Wallpaper** | 1080 x 1920 | 3.6 x 6.4 |
-| **HD Wallpaper** | 1920 x 1080 | 6.4 x 3.6 |
-| **4K Wallpaper** | 3840 x 2160 | 12.8 x 7.2 |
-| **A4 Print** | 2480 x 3508 | 8.3 x 11.7 |
 
 ### Examples
 
 ```bash
+# By city and country
+python create_map_poster.py -c "New York" -C "USA" -t noir -d 12000
+
+# By latitude and longitude
+python create_map_poster.py --latlon 0.3485,-78.1267 -c "Ibarra" -C "Ecuador" --theme neon_cyberpunk -d 4000
+
 # Iconic grid patterns
 python create_map_poster.py -c "New York" -C "USA" -t noir -d 12000           # Manhattan grid
 python create_map_poster.py -c "Barcelona" -C "Spain" -t warm_beige -d 8000   # Eixample district
