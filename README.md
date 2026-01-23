@@ -112,7 +112,7 @@ python create_map_poster.py -c "Tokyo" -C "Japan" --all-themes
 
 ## Themes
 
-17 themes available in `themes/` directory:
+27 themes available in `themes/` directory:
 
 | Theme | Style |
 |-------|-------|
@@ -133,6 +133,16 @@ python create_map_poster.py -c "Tokyo" -C "Japan" --all-themes
 | `autumn` | Seasonal burnt oranges and reds |
 | `copper_patina` | Oxidized copper aesthetic |
 | `monochrome_blue` | Single blue color family |
+| `blood_moon` | Near-black background with crimson roads - dramatic horror aesthetic |
+| `charcoal_industrial` | Dark gray background with warm orange/rust roads - industrial architectural aesthetic |
+| `dark_chocolate` | Dark brown background with warm amber roads - vintage leather aesthetic |
+| `deep_space` | Dark cosmic background with galaxy-inspired roads - NASA starfield aesthetic |
+| `emerald_night` | Dark forest green background with emerald/teal roads - bioluminescent nature aesthetic |
+| `matrix` | Pure black background with bright green roads - classic terminal/hacker aesthetic |
+| `obsidian` | Black volcanic background with lava-orange roads - glowing ember aesthetic |
+| `ocean_depths` | Dark teal background with aqua/cyan roads - deep underwater aesthetic |
+| `slate_storm` | Dark blue-gray background with ice blue roads - cold stormy night aesthetic |
+| `ultraviolet` | Deep purple/violet background with electric magenta roads - cosmic city vibes |
 
 ## Output
 
