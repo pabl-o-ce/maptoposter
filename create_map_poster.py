@@ -497,7 +497,9 @@ def create_poster(
     dist,
     output_file,
     output_format,
-    orientation="portrait",
+    width=None,
+    height=None,
+    orientation=None,
     country_label=None,
     name_label=None,
 ):
@@ -536,16 +538,23 @@ def create_poster(
 
     print("✓ All data retrieved successfully!")
 
-    # 2. Setup Plot with orientation
+    # 2. Setup Plot with orientation or custom dimensions
     print("Rendering map...")
-    if orientation == "landscape":
-        figsize = (16, 12)
-    else:  # portrait
-        figsize = (12, 16)
+    if width is not None or height is not None:
+        if orientation is not None:
+            print(f"⚠ Warning: --width/--height provided. Ignoring --orientation '{orientation}'.")
+        # Use provided dimensions, defaulting to standard 12x16 if one is missing
+        w = width if width is not None else 12.0
+        h = height if height is not None else 16.0
+        figsize = (w, h)
+    else:
+        # Fallback to orientation (default to portrait if None)
+        if orientation == "landscape":
+            figsize = (16, 12)
+        else:
+            figsize = (12, 16)
 
     fig, ax = plt.subplots(figsize=figsize, facecolor=THEME["bg"])
-    ax.set_facecolor(THEME["bg"])
-    ax.set_position((0.0, 0.0, 1.0, 1.0))
 
     # Project graph to a metric CRS so distances and aspect are linear (meters)
     G_proj = ox.project_graph(G)
@@ -775,6 +784,9 @@ Examples:
   # Landscape orientation
   python create_map_poster.py -c "Tokyo" -C "Japan" -t japanese_ink -d 15000 -o landscape  # Wide format
 
+  # Custom dimensions (Instagram square)
+  python create_map_poster.py -c "Paris" -C "France" -W 3.6 -H 3.6
+
   # List themes
   python create_map_poster.py --list-themes
 
@@ -786,6 +798,8 @@ Options:
   --all-themes        Generate posters for all themes
   --distance, -d      Map radius in meters (default: 29000)
   --orientation, -o   Poster orientation: portrait or landscape (default: portrait)
+  --width, -W         Custom width in inches (overrides orientation)
+  --height, -H        Custom height in inches (overrides orientation)
   --format, -f        Output format: png, svg, or pdf (default: png)
   --list-themes       List all available themes
 
@@ -836,6 +850,7 @@ Examples:
   python create_map_poster.py --city Tokyo --country Japan --theme midnight_blue
   python create_map_poster.py --city Paris --country France --theme noir --distance 15000
   python create_map_poster.py --city London --country UK --theme noir --orientation landscape
+  python create_map_poster.py --city "New York" --country "USA" --width 3.6 --height 3.6
   python create_map_poster.py --list-themes
         """,
     )
@@ -888,9 +903,20 @@ Examples:
     parser.add_argument(
         "--orientation",
         "-o",
-        default="portrait",
         choices=["portrait", "landscape"],
         help="Poster orientation (default: portrait)",
+    )
+    parser.add_argument(
+        "--width",
+        "-W",
+        type=float,
+        help="Image width in inches (overrides --orientation)",
+    )
+    parser.add_argument(
+        "--height",
+        "-H",
+        type=float,
+        help="Image height in inches (overrides --orientation)",
     )
 
     args = parser.parse_args()
@@ -957,6 +983,8 @@ Examples:
                 args.distance,
                 output_file,
                 args.format,
+                width=args.width,
+                height=args.height,
                 orientation=args.orientation,
                 country_label=args.country_label,
                 name_label=args.name,
