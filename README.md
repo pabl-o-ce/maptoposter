@@ -2,9 +2,6 @@
 
 Generate beautiful, minimalist map posters for any city in the world.
 
-<img src="posters/singapore_neon_cyberpunk_20260118_153328.png" width="250">
-<img src="posters/dubai_midnight_blue_20260118_140807.png" width="250">
-
 ## Examples
 
 
@@ -19,6 +16,16 @@ Generate beautiful, minimalist map posters for any city in the world.
 | Singapore    | Singapore      | neon_cyberpunk  | <img src="posters/singapore_neon_cyberpunk_20260118_153328.png" width="250"> |
 | Australia    | Melbourne      | forest          | <img src="posters/melbourne_forest_20260118_153446.png" width="250"> |
 | UAE          | Dubai          | midnight_blue   | <img src="posters/dubai_midnight_blue_20260118_140807.png" width="250"> |
+| Bolivia      | La Paz         | blood_moon      | <img src="posters/la_paz_blood_moon_20260122_225446.png" width="250"> |
+| Brazil       | Sao Paulo      | charcoal_industrial | <img src="posters/sao_paulo_charcoal_industrial_20260122_225504.png" width="250"> |
+| Ecuador      | Quito          | dark_chocolate  | <img src="posters/quito_dark_chocolate_20260122_225545.png" width="250"> |
+| Chile        | Santiago       | deep_space      | <img src="posters/santiago_deep_space_20260122_225601.png" width="250"> |
+| Brazil       | Manaus         | emerald_night   | <img src="posters/manaus_emerald_night_20260122_225648.png" width="250"> |
+| Colombia     | Bogota         | matrix          | <img src="posters/bogota_matrix_20260122_225655.png" width="250"> |
+| Peru         | Arequipa       | obsidian        | <img src="posters/arequipa_obsidian_20260122_225729.png" width="250"> |
+| Brazil       | Rio de Janeiro | ocean_depths    | <img src="posters/rio_de_janeiro_ocean_depths_20260122_225738.png" width="250"> |
+| Uruguay      | Montevideo     | slate_storm     | <img src="posters/montevideo_slate_storm_20260122_225754.png" width="250"> |
+| Argentina    | Buenos Aires   | ultraviolet     | <img src="posters/buenos_aires_ultraviolet_20260122_225802.png" width="250"> |
 
 ## Installation
 
